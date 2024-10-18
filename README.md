@@ -463,6 +463,7 @@ The case is made up of 3 parts, a bottom, a top and a switch extender. These
 were designed to not require any support, or brim when printing them, though
 some mouse ears can help, if you experience warping around the strap loops.
 
+
 #### Printing
 
 The ideal orientation of the parts is the following:
@@ -486,6 +487,64 @@ with them:
 
 \*: There's barely any parts of the case that are thick enough to require
 infill, so don't stress about this much.
+
+## Alternative case "BTL edit"
+
+![3D render of the alternative case](./images/alt-case-render.jpg)
+
+based on an unreleased beta of the case "Tiny Slimes Final" i got from gorbit99, 
+i edited a case variation. It consists of only two parts, Bottom and Top part. 
+The button part is integrated to the Top. Good work, Gorbit!
+
+I somehow got 804040 with 1800mAh, which are in fact 8.6mm thick and should 
+therefore be labeled 864040... This case variation takes care of that.
+
+Attention: Its possible to reduce the Bottoms height by 0.5mm in your slicer for
+a standard 1500mAh 804040.
+
+I added a small notch to keep the PCB snapped when its placed down to the battery.
+
+The tops have been made 0.8mm thicker and extended above the shell of the bottom,
+so you do not accidently push them in too far. Its also easier to re-open the case.
+For the cute look i added the SlimeVR logo.
+
+Support for AUX connector "BTL Edition"  (optional)
+AUX connector.stl provides a small case to create the plug for the AUX cable.
+
+For using AUX connectors i used those 2.54mm spaced pins and headers you get 
+with the ESP32. Make sure to wire them up keyed:
+
+(x)  ( )  (x) (x) (x)
+3V3   NC  GND SCL SDA
+
+![picture of a soldered AUX connector](./images/aux-connector.jpg)
+
+
+For TinySlimes that need no AUX, use 
+Bottom + Top 
+
+For TinySlimes that require AUX support, use
+Bottom - AUX Version + Top AUX version
+
+For TinySlime that might get AUX support later on, use
+Bottom - AUX Version + Top - AUX prepared
+
+The AUX prepared Top closes the gap for AUX connector in the Bottom but keeps you 
+from having to change the Bottom again later.
+
+The Bottoms SET uses two non-AUX trackers for knee (tigh) and five AUX versions
+for Chest + Hip, Ankles + Feets and Arms. The names of the trackers are embossed 
+in thecase in this set.
+
+if you have questions about the alternative case, run into a problem or want to 
+suggest another modification, contact me on Discord @beetle060 
+
+Printing these: 
+
+Same as the original case regarding support and adhesion: none needed.
+These Bottoms are fine if printed with 0.2mm layers.
+For the Tops, i suggest 0.15mm layers because of the tiny details in the overhangs.
+
 
 #### Assembly
 
