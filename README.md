@@ -514,9 +514,6 @@ AUX connector.stl provides a small case to create the plug for the AUX cable.
 For using AUX connectors i used those 2.54mm spaced pins and headers you get 
 with the ESP32. Make sure to wire them up keyed:
 
-(x)  ( )  (x) (x) (x)
-3V3   NC  GND SCL SDA
-
 ![picture of a soldered AUX connector](./images/aux-connector.jpg)
 
 
